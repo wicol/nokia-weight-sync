@@ -10,7 +10,10 @@ Get weight from Nokia Health and update to Garmin Connect or Smashrun.
 2. Satisfy the following requirements:
 
     - Python 3.X
-    - Python libraries: arrow, requests, requests-oauthlib
+    - Set up a virtual env with requirements:
+        - `python3 -m venv venv`
+        - `source venv/bin/activate`
+        - `pip install -r requirements.txt`
     
 3. [Register](https://account.withings.com/partner/add_oauth2) an application with Nokia Health and obtain a consumer key and secret.
     1. logo: the requirements are quite strict, [feel free to use this one](https://github.com/magnific0/nokia-weight-sync/blob/master/logo256w.png)
@@ -60,7 +63,6 @@ nokia-weight-sync includes components the following open-source projects:
 
 * ```fit.py``` from [ikasamah/withings-garmin](https://github.com/ikasamah/withings-garmin), MIT License (c) 2013 Masayuki Hamasaki, adapted for Python 3.
 * ```garmin.py``` from [jaroslawhartman/withings-garmin-v2](https://github.com/jaroslawhartman/withings-garmin-v2), MIT License (c) 2013 Masayuki Hamasaki, adapted for Python 3.
-* ```nokia.py``` from [python-nokia](https://github.com/orcasgit/python-nokia), MIT License (c) 2012 Maxime Bouroumeau-Fuseau, 2017 ORCAS, unmodified.
 * ```sessioncache.py``` from [cpfair/tapiriik](https://github.com/cpfair/tapiriik/blob/187d1b97ce73cc35b5e2194eb4631ceff20499e3/tapiriik/services/sessioncache.py), Apache License 2.0, unmodified.
 * ```smashrun.py``` from [campbellr/smashrun-client](https://github.com/campbellr/smashrun-client), Apache License 2.0, several fixes.
 
